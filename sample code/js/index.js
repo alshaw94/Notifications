@@ -58,15 +58,15 @@ function createNotification() {
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 1000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 100); //delayed time  - add 1 second
     			
     //
     //setup notification
     //
 	window.plugin.notification.local.add({ 
     	id: 		1,
-        title: 		"Hey you",
-        message: 	"This is an example notification",
+        title: 		"Helllloooo",
+        message: 	"Is it me you're looking for?",
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
