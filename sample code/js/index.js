@@ -69,5 +69,5 @@ function createNotification() {
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
-    window.plugin.notification.local.onclick = function (1, foreground,) {createDialog};
+    window.plugin.notification.local.onclick = function (id, state, json) {};
 }
