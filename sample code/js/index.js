@@ -46,7 +46,7 @@ function createDialog() {
 function dialogDismissed(buttonIndex) {
 	
 	if(buttonIndex==1) new Toast({content: "Have a break. Have a KitKat.", duration: 3000});
-   	else if(buttonIndex==2) new Toast({content: 'Keep working.', duration: 3000});
+   	else if(buttonIndex==2) createNotification();
 
 }
 
@@ -58,7 +58,7 @@ function createNotification() {
     //generate a time to post notification
     //
     var currentTime = new Date().getTime(); //current time
-    var notificationTime = new Date(currentTime + 1800000); //delayed time  - add 1 second
+    var notificationTime = new Date(currentTime + 1000); //delayed time  - add 1 second
     			
     //
     //setup notification
