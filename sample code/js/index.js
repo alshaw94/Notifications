@@ -15,7 +15,6 @@ $(document).on('pageinit', function() {
 		createNotification();
 	});
 
-
 });
 
 
@@ -70,5 +69,5 @@ function createNotification() {
         date: 		notificationTime, 
         badge: 		notification_count++
    	});
-    
+    window.plugin.notification.local.onclick = function (createDialog) {};
 }
